@@ -14,7 +14,7 @@ RegisterNetEvent("ServerEmoteRequest", function(target, emotename, etype)
 
    local distance = #(pedcoord - targetcoord)
 
-   if distance > 2 then
+   if distance > 3 then
        return
    end
     TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype)
