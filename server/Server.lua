@@ -32,7 +32,7 @@ RegisterNetEvent("ServerValidEmote", function(target, requestedemote, otheremote
 
    local distance = #(pedcoord - targetcoord)
 
-   if distance > 2 then
+   if distance > 3 then
        return
    end
     TriggerClientEvent("SyncPlayEmote", source, otheremote, target)
